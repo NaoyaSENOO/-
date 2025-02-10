@@ -34,19 +34,16 @@
             padding-bottom: 10px;
         }
         .profile {
-        position: relative; /* 画像の配置の基準点を設定 */
-        padding-top: 50px; /* 画像分の余白を追加 */
-        padding-right: 120px; /* 画像の分だけ右側にスペースを確保 */
+            text-align: center; /* 画像と見出しを中央揃え */
         }
-    
+        
         .profile img {
-        position: absolute;
-        top: 10px; /* 上からの距離 */
-        right: 10px; /* 右からの距離 */
-        width: 100px; /* 画像サイズを調整 */
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover; /* 画像の比率を維持しつつトリミング */
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block; /* インライン要素の隙間をなくす */
+            margin: 0 auto 10px; /* 上下中央配置 + 見出しとの間隔 */
         }
         .edu-card {
             background: #e3e3e3;
@@ -77,8 +74,9 @@
     </header>
     
     <section class="profile">
-        <h2>プロフィール</h2>
+        
         <img src="IMG_2174.jpeg" alt="写真">
+        <h2>プロフィール</h2>
         <p>慶應義塾大学理工学部、物理情報工学科4年の妹尾直哉（セノオナオヤ）です。<br>
         2023年9月よりフランスのEcole Centrale de Lyonにダブルディグリープログラムを利用して留学中。2025年5月に帰国予定で、その後、2025年9月より慶應義塾大学大学院理工学研究科へ進学予定です。</p>
         
