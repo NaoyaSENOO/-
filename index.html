@@ -34,17 +34,36 @@
             padding-bottom: 10px;
         }
         .profile {
-            text-align: center; /* 画像と見出しを中央揃え */
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-
         
-        .profile img {
-            width: 140px;
-            height: 140px;
+        .profile-header {
+            text-align: center; /* 画像のみ中央揃え */
+        }
+        
+        .profile-header img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            display: block; /* インライン要素の隙間をなくす */
-            margin: 0 auto 10px; /* 上下中央配置 + 見出しとの間隔 */
+            display: block;
+            margin: 0 auto 10px; /* 画像を中央揃え */
+        }
+        
+        .profile h2 {
+            text-align: left; /* 見出しを左揃え */
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+        
+        .profile p {
+            text-align: left; /* 文章を左揃え */
+            line-height: 1.6;
         }
         .edu-card {
             background: #e3e3e3;
@@ -75,14 +94,15 @@
     </header>
     
     <section class="profile">
-        
-        <img src="IMG_2174.jpeg" alt="写真">
+        <div class="profile-header">
+            <img src="IMG_2174.jpeg" alt="写真">
+        </div>
         <h2>プロフィール</h2>
         <p>慶應義塾大学理工学部、物理情報工学科4年の妹尾直哉（セノオナオヤ）です。<br>
         2023年9月よりフランスのEcole Centrale de Lyonにダブルディグリープログラムを利用して留学中。2025年5月に帰国予定で、その後、2025年9月より慶應義塾大学大学院理工学研究科へ進学予定です。</p>
-        
+    
         <p>Ecole Centrale de Lyonは、フランスのグランゼコールの一つであり、パリ以外の地域ではエンジニア部門で国内1位を誇る名門校です。現在は、エンジニアとして幅広い分野に対応できるジェネラリストになるための高度な教育を受けています。</p>
-        
+    
         <p>私の強みは、挑戦する勇気とそれを継続する粘り強さです。高校から現在に至るまでのラグビー活動や、フランスへの留学を通じて、困難な環境でも適応し、挑戦し続ける姿勢を養いました。特に、留学先ではハイスピードかつ高密度な教育カリキュラムを経験し、大量のタスクを効率的に管理し、計画的に遂行する力を身につけました。</p>
     </section>
     
